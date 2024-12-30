@@ -1,11 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @layer base {
   * {
-    font-family: "Ubuntu", serif;
+    font-family: "Ubuntu", sans-serif;
   }
 }
+
+@tailwind components;
+@layer components {
+  .navItem {
+    @apply uppercase xl:text-lg sm:text-base xs:text-sm text-xs font-medium leading-none tracking-widest pointer-events-auto hover:text-white/60;
+  }
+
+  .banner-heading {
+    @apply sm:text-left text-center w-full 2xl:h-20 xl:h-16 lg:h-[3.25rem] sm:h-10 h-6 overflow-hidden relative;
+  }
+
+  .h1 {
+    @apply w-full leading-[0.75] 2xl:text-[6rem] xl:text-[5rem] lg:text-[4rem] sm:text-[3rem] text-[2rem] uppercase;
+  }
+}
+
+@tailwind utilities;
