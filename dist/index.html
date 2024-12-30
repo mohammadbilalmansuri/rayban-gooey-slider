@@ -10,11 +10,13 @@
       href="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.css"
     />
   </head>
-  <body class="w-full h-full relative bg-gray-950 text-white">
+  <body class="w-full h-full relative bg-black text-white overflow-x-hidden">
     <div
-      class="loader w-full h-full bg-red-500 absolute left-0 top-0 z-50 text-8xl flex justify-center items-center transition-all duration-300"
+      class="loader w-full h-dvh bg-red-500 absolute left-0 top-0 z-50 text-8xl flex justify-center items-center transition-all duration-300"
     >
-      <div class="w-12 fill-white transition-all animate-spin relative">
+      <div
+        class="lg:w-12 md:w-10 w-8 fill-white transition-all animate-spin relative"
+      >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
           <path
             d="M304 48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zm0 416a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM48 304a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm464-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM142.9 437A48 48 0 1 0 75 369.1 48 48 0 1 0 142.9 437zm0-294.2A48 48 0 1 0 75 75a48 48 0 1 0 67.9 67.9zM369.1 437A48 48 0 1 0 437 369.1 48 48 0 1 0 369.1 437z"
@@ -22,198 +24,153 @@
         </svg>
       </div>
     </div>
+
     <main class="w-full relative">
-      <section
-        id="banner"
-        class="size-full min-h-screen relative overflow-hidden"
-      >
-        <div id="banner-back" class="w-full h-screen overflow-hidden relative">
+      <section id="banner" class="w-full h-dvh relative overflow-hidden">
+        <div id="banner-back" class="size-full relative">
           <img
             class="size-full"
-            src="https://res.cloudinary.com/samaxy50/image/upload/v1734694733/rayban1.jpg"
+            src="https://res.cloudinary.com/mohammadbilalmansuri/image/upload/v1735044332/rayban/rayban-1.webp"
             alt="Slide 1"
           />
           <img
             class="size-full"
-            src="https://res.cloudinary.com/samaxy50/image/upload/v1734694732/rayban2.jpg"
+            src="https://res.cloudinary.com/mohammadbilalmansuri/image/upload/v1735044326/rayban/rayban-2.webp"
             alt="Slide 2"
           />
           <img
             class="size-full"
-            src="https://res.cloudinary.com/samaxy50/image/upload/v1734694733/rayban3.jpg"
+            src="https://res.cloudinary.com/mohammadbilalmansuri/image/upload/v1735044329/rayban/rayban-3.webp"
             alt="Slide 3"
           />
           <img
             class="size-full"
-            src="https://res.cloudinary.com/samaxy50/image/upload/v1734694733/rayban3.jpg"
+            src="https://res.cloudinary.com/mohammadbilalmansuri/image/upload/v1735044334/rayban/rayban-4.webp"
             alt="Slide 4"
           />
           <img
             class="size-full"
-            src="https://res.cloudinary.com/samaxy50/image/upload/v1734694734/rayban5.jpg"
+            src="https://res.cloudinary.com/mohammadbilalmansuri/image/upload/v1735044344/rayban/rayban-5.webp"
             alt="Slide 5"
           />
         </div>
 
         <div
-          id="banner-top"
-          class="size-full min-h-screen absolute top-0 left-0 z-10 pointer-events-none bg-transparent"
+          class="size-full absolute top-0 left-0 md:bg-black/25 bg-black/50 pointer-events-none z-10"
+        ></div>
+
+        <div
+          id="banner-front"
+          class="size-full absolute top-0 left-0 z-20 pointer-events-none bg-transparent flex flex-col items-center justify-center gap-5"
         >
           <div
-            class="size-full max-w-[1920px] mx-auto flex flex-col relative text-white"
+            class="size-full max-w-[1920px] flex flex-col relative text-white"
           >
-            <nav class="w-full p-5 flex justify-between items-center">
-              <div class="flex items-center gap-10">
-                <img
-                  src="https://res.cloudinary.com/samaxy50/image/upload/v1734694733/raybanlogo.png"
-                  alt="Ray Ban"
-                  class="h-14"
-                />
-                <a
-                  class="uppercase text-sm font-medium leading-none tracking-widest pointer-events-auto hover:text-white/60"
-                  href="#"
-                  >Products</a
-                >
-                <a
-                  class="uppercase text-sm font-medium leading-none tracking-widest pointer-events-auto hover:text-white/60"
-                  href="#"
-                  >About</a
-                >
-              </div>
-              <div class="flex items-center gap-10">
-                <a
-                  class="uppercase text-sm font-medium leading-none tracking-widest pointer-events-auto hover:text-white/60"
-                  href="#"
-                  >Pricing</a
-                >
-                <a
-                  class="uppercase text-sm font-medium leading-none tracking-widest pointer-events-auto hover:text-white/60"
-                  href="#"
-                  >Contact</a
-                >
+            <nav
+              class="w-full sm:p-5 sm:pl-3 p-3 pl-1.5 flex items-center md:gap-10 xs:gap-5 gap-3"
+            >
+              <img
+                src="https://res.cloudinary.com/mohammadbilalmansuri/image/upload/v1735044331/rayban/raybanlogo.webp"
+                alt="Ray Ban"
+                class="sm:h-16 xs:h-12 h-10 min-w-fit"
+              />
+
+              <div
+                class="w-full flex items-center lg:justify-between justify-end md:gap-10 xs:gap-5 gap-3"
+              >
+                <div class="flex items-center md:gap-10 xs:gap-5 gap-3">
+                  <a class="navItem" href="#">Products</a>
+                  <a class="navItem" href="#">About</a>
+                </div>
+                <div class="flex items-center md:gap-10 xs:gap-5 gap-3">
+                  <a class="navItem" href="#">Pricing</a>
+                  <a class="navItem" href="#">Contact</a>
+                </div>
               </div>
             </nav>
 
             <div
-              class="w-full px-5 flex items-center justify-between absolute top-1/2 left-0 -translate-y-1/2"
+              class="w-full sm:h-auto h-full p-5 flex sm:flex-row flex-col items-center sm:justify-between justify-end absolute left-0 sm:top-1/2 sm:-translate-y-1/2 sm:gap-0 gap-10"
             >
               <div
                 id="banner-left"
-                class="w-1/2 flex flex-col items-start gap-2"
+                class="md:w-3/5 sm:w-[70%] w-full flex flex-col sm:items-start items-center gap-5"
               >
-                <div
-                  class="banner-heading w-full h-24 overflow-hidden relative"
-                >
-                  <h1
-                    class="text-8xl tracking-wide leading-[0.76] uppercase absolute top-0 left-0"
-                  >
-                    David Chang
-                  </h1>
-                  <h1
-                    class="text-8xl tracking-wide leading-[0.76] uppercase absolute top-full left-0 opacity-0"
-                  >
+                <h1 class="banner-heading">
+                  <span class="h1 absolute top-0 left-0"> David Chang </span>
+                  <span class="h1 absolute top-full left-0 opacity-0">
                     Susan Jamal
-                  </h1>
-                  <h1
-                    class="text-8xl tracking-wide leading-[0.76] uppercase absolute top-full left-0 opacity-0"
-                  >
+                  </span>
+                  <span class="h1 absolute top-full left-0 opacity-0">
                     Olivia Wilson's
-                  </h1>
-                  <h1
-                    class="text-8xl tracking-wide leading-[0.76] uppercase absolute top-full left-0 opacity-0"
-                  >
+                  </span>
+                  <span class="h1 absolute top-full left-0 opacity-0">
                     Daniel Lee
-                  </h1>
-                  <h1
-                    class="text-8xl tracking-wide leading-[0.76] uppercase absolute top-full left-0 opacity-0"
-                  >
+                  </span>
+                  <span class="h1 absolute top-full left-0 opacity-0">
                     Liam Miller's
-                  </h1>
-                </div>
+                  </span>
+                </h1>
 
-                <div
-                  class="banner-heading w-full h-24 overflow-hidden relative"
-                >
-                  <h1
-                    class="text-8xl tracking-wide leading-[0.76] uppercase absolute top-0 left-0"
-                  >
-                    Gives Zero
-                  </h1>
-                  <h1
-                    class="text-8xl tracking-wide leading-[0.76] uppercase absolute top-full left-0 opacity-0"
-                  >
+                <h1 class="banner-heading">
+                  <span class="h1 absolute top-0 left-0"> Gives Zero </span>
+                  <span class="h1 absolute top-full left-0 opacity-0">
                     Indifference Is
-                  </h1>
-                  <h1
-                    class="text-8xl tracking-wide leading-[0.76] uppercase absolute top-full left-0 opacity-0"
-                  >
+                  </span>
+                  <span class="h1 absolute top-full left-0 opacity-0">
                     Apathy Is
-                  </h1>
-                  <h1
-                    class="text-8xl tracking-wide leading-[0.76] uppercase absolute top-full left-0 opacity-0"
-                  >
+                  </span>
+                  <span class="h1 absolute top-full left-0 opacity-0">
                     Feels
-                  </h1>
-                  <h1
-                    class="text-8xl tracking-wide leading-[0.76] uppercase absolute top-full left-0 opacity-0"
-                  >
+                  </span>
+                  <span class="h1 absolute top-full left-0 opacity-0">
                     Boredom Is
-                  </h1>
-                </div>
+                  </span>
+                </h1>
 
-                <div
-                  class="banner-heading w-full h-24 overflow-hidden relative"
-                >
-                  <h1
-                    class="text-8xl tracking-wide leading-[0.76] uppercase absolute top-0 left-0"
-                  >
-                    Funks.
-                  </h1>
-                  <h1
-                    class="text-8xl tracking-wide leading-[0.76] uppercase absolute top-full left-0 opacity-0"
-                  >
+                <h1 class="banner-heading">
+                  <span class="h1 absolute top-0 left-0"> Funks. </span>
+                  <span class="h1 absolute top-full left-0 opacity-0">
                     Absolute.
-                  </h1>
-                  <h1
-                    class="text-8xl tracking-wide leading-[0.76] uppercase absolute top-full left-0 opacity-0"
-                  >
+                  </span>
+                  <span class="h1 absolute top-full left-0 opacity-0">
                     Total.
-                  </h1>
-                  <h1
-                    class="text-8xl tracking-wide leading-[0.76] uppercase absolute top-full left-0 opacity-0"
-                  >
+                  </span>
+                  <span class="h1 absolute top-full left-0 opacity-0">
                     Nothing.
-                  </h1>
-                  <h1
-                    class="text-8xl tracking-wide leading-[0.76] uppercase absolute top-full left-0 opacity-0"
-                  >
+                  </span>
+                  <span class="h1 absolute top-full left-0 opacity-0">
                     Max.
-                  </h1>
-                </div>
+                  </span>
+                </h1>
 
                 <button
-                  class="border-none mt-5 py-2 px-4 bg-white text-gray-950 kajiro text-4xl tracking-wide leading-none pointer-events-auto hover:bg-white/60"
+                  class="sm:mt-5 mt-3 sm:ml-2 bg-white text-black lg:px-6 lg:py-3 px-5 py-2.5 lg:text-lg sm:text-base text-sm uppercase font-medium hover:bg-white/60 pointer-events-auto"
                 >
                   Explore Now
                 </button>
               </div>
 
-              <div id="banner-right" class="w-1/5 flex flex-col gap-12">
-                <div class="flex flex-col items-end gap-5 text-right">
-                  <p class="text-sm">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img
-                    class="w-full aspect-video object-cover object-center"
-                    src="https://res.cloudinary.com/samaxy50/image/upload/v1734694734/rayban-banner-right.jpg"
-                    alt="Banner Right Image"
-                  />
-                  <p class="text-sm">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Odio dicta tempora quae magnam sint tempore asperiores
-                    voluptatibus voluptatum nostrum vitae.
-                  </p>
-                </div>
+              <div
+                id="banner-right"
+                class="xl:w-1/5 lg:w-1/4 sm:w-[30%] xs:w-3/4 w-[90%] flex flex-col sm:items-end items-center gap-5 sm:text-right text-center"
+              >
+                <p class="lg:text-base text-sm">
+                  Lorem ipsum dolor sit amet consectetur.
+                </p>
+                <img
+                  class="sm:block hidden w-full aspect-video object-cover object-center"
+                  src="https://res.cloudinary.com/mohammadbilalmansuri/image/upload/v1735044330/rayban/rayban-banner-right.webp"
+                  alt="Banner Right Image"
+                />
 
-                <p class="text-right text-sm">
+                <p class="lg:text-base text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+                  dicta tempora quae magnam sint tempore asperiores voluptatibus
+                  voluptatum nostrum vitae.
+                </p>
+
+                <p class="lg:text-base text-sm">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
                   corporis cumque voluptatum aliquam quia, cum neque assumenda,
                   dolores impedit velit, a illum in ducimus natus.
