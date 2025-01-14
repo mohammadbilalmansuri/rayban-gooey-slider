@@ -7,4 +7,5 @@ A custom slider featuring a 3D gooey effect, created to give a modern look to th
 - HTML
 - Tailwind CSS
 - JavaScript
+- GSAP with ScrollTrigger
 - Shery.js
