@@ -3,7 +3,7 @@
     document
       .querySelector(".loader")
       .classList.add("-z-50", "pointer-events-none", "opacity-0");
-  }, 500);
+  }, 300);
 
   Shery.imageEffect("#banner-back", {
     style: 1,
