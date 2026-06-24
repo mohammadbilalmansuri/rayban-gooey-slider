@@ -57,7 +57,7 @@
           this._targets[3].classList.add("transition-all", "duration-200");
         },
       },
-      "contentAnim"
+      "contentAnim",
     );
 
     tl.from(
@@ -68,7 +68,7 @@
         duration: 0.5,
         stagger: 0.2,
       },
-      "contentAnim"
+      "contentAnim",
     );
   } else {
     tl.from(".banner-heading span:nth-child(1), #banner-left button", {
